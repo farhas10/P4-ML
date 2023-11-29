@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.pyc
+
+# Mac
+.DS_Store
+
+output/
+
+# ML files
+*.joblib
+
+# Planning output.
+*.planner

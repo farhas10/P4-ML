@@ -58,11 +58,11 @@ def main():
   
   # NOTE: To plan a path to a goal position (x and y, in meters), do:
   #
-  #     plan_to_pose(x, y)
+  #     plan_to_pose(x, y, robot)
   #
   # To turn to a given angle (theta, in radians), do:
   #
-  #     turn_to_theta(theta)
+  #     turn_to_theta(theta, robot)
   #
   # You must turn to the theta after x, y location is reached.
   

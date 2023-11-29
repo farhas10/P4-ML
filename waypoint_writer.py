@@ -67,7 +67,7 @@ def update_labels_and_waypoints(labels, waypoints, robot):
 
 
 def write_photo(camera_handle):
-    """s
+    """
     Write photo from current camera position.
 
     Arguments:

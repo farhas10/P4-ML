@@ -38,7 +38,7 @@ def plan_to_pose(x, y, robot):
         y: Goal y position in meters in map frame.
         robot: Mbot object.
     """
-    print("INFO: Planning to pose ({}, {})...".format(x, y))
+    print(f"INFO: Planning to pose ({x}, {y})...")
     # Run the p3 code and go to specified coordinates.
     subprocess.call(["bin/robot_plan_path", MAP_PATH, str(x), str(y)])
 
@@ -62,7 +62,7 @@ def turn_to_theta(theta, robot):
         theta: Goal angle in radians.
         robot: Mbot object.
     """
-    print("INFO: Turning to theta {theta} radians...")
+    print(f"INFO: Turning to theta {theta} radians...")
     p_x,p_y, p_t = robot.read_slam_pose()
     while(abs(wrap_angle(theta - p_t)) > TURN_ERROR):
         error = wrap_angle(theta - p_t)
