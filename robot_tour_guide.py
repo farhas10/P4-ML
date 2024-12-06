@@ -41,13 +41,13 @@ def main():
 
   labels, waypoints = read_labels_and_waypoints()  # Load from waypoints.txt
 
-   labels = [0, 1, 2, ...]
-   waypoints = [[0, 0, 0], [9, 2, 8], [3, 6, 4], ...]
-
+  labels = [0, 1, 2, ...]
+  waypoints = [[0, 0, 0], [9, 2, 8], [3, 6, 4], ...]
+  bool started = true
 
   # NOTE: To get the cropped image of a post-it from the camera, do:
   #
-  #     frame = ch.get_processed_image()
+  # frame = ch.get_processed_image()
   #
   # If a post-it is not detected, frame will be None. Make sure you check for this
   # case. To save the image to the folder "output", pass `save=True` to this
@@ -68,6 +68,24 @@ def main():
   
 
   # TODO: Your code here!
+
+  while started:
+    frame = ch.get_processed_image()
+    while frame == None:
+      frame = ch.get_processed_image()
+    save=True
+    y_pred = model.predict([frame])[0]
+    for i in range(labels.len()):
+      if labels[i] == y_pred & started = true:
+        Mbot.plan_to_pose(waypoints[i][0], waypoints[i][1])
+        time.sleep(0.5)
+        Mbot.turn_to_theta(waypoints[i][2])
+      else if y_pred == 0 {
+        started = false
+        Mbot.plan_to_pose(0,0,0)
+      }
+      
+    
 
   # Write your code to detect the label on a poster at a given waypoint, and use
   # the result to determine which waypoint to visit next. You will need to use the
