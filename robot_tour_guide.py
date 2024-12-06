@@ -41,8 +41,8 @@ def main():
 
   labels, waypoints = read_labels_and_waypoints()  # Load from waypoints.txt
 
-  labels = [0, 1, 2, ...]
-  waypoints = [[0, 0, 0], [9, 2, 8], [3, 6, 4], ...]
+   labels = [0, 1, 2, ...]
+   waypoints = [[0, 0, 0], [9, 2, 8], [3, 6, 4], ...]
 
 
   # NOTE: To get the cropped image of a post-it from the camera, do:
@@ -68,7 +68,7 @@ def main():
   
 
   # TODO: Your code here!
-  
+
   # Write your code to detect the label on a poster at a given waypoint, and use
   # the result to determine which waypoint to visit next. You will need to use the
   # "labels" and "waypoints" variables! When the robot reads a poster with label "0",
