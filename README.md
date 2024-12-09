@@ -1,6 +1,6 @@
 # Project 4: Machine Learning
 
-Video to youtube link: https://youtu.be/jzHTIuhMPVM
+Video to youtube link: https://www.youtube.com/playlist?list=PLFnwoMgOsBI3sL1EcZR1D0LhkOsxoV2Fj
 
 
 
