@@ -42,9 +42,8 @@ def main():
 
   labels, waypoints = read_labels_and_waypoints()  # Load from waypoints.txt
 
-  labels = [0, 2]
-  waypoints = [[0.988, 0, -3], [0, 0, 0]]
-  started = True
+  labels = [5, 8]
+  waypoints = [[-0.66, 0.040, -3.00], [0, 0, 0]]
 
   # NOTE: To get the cropped image of a post-it from the camera, do:
   #
@@ -71,7 +70,7 @@ def main():
   # TODO: Your code here!
 
   while True:
-    frame= ch.get_processed_image()
+    frame = ch.get_processed_image()
     if frame is not None:
       y_pred = model.predict([frame])[0]
       time.sleep(1)
@@ -83,6 +82,7 @@ def main():
         if (y_pred == 0):
           robot.stop
           break
+
       except Exception as e:
         print(e)
     else:
