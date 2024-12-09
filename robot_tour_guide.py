@@ -42,8 +42,8 @@ def main():
 
   labels, waypoints = read_labels_and_waypoints()  # Load from waypoints.txt
 
-  labels = [5, 8]
-  waypoints = [[-0.66, 0.040, -3.00], [0, 0, 0]]
+  #labels = [5, 8]
+  #waypoints = [[-0.66, 0.040, -3.00], [0, 0, 0]]
 
   # NOTE: To get the cropped image of a post-it from the camera, do:
   #

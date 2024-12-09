@@ -1,5 +1,9 @@
 # Project 4: Machine Learning
 
+Video to youtube link: https://youtu.be/jzHTIuhMPVM
+
+
+
 Solution code for [Robotics 102 Project 4: Machine Learning (Part 3: Robot Tour Guide)](https://robotics102.github.io/projects/a4.html#tour_guide).
 
 ## Setup
@@ -42,3 +46,6 @@ Alternatively, you can hard code your waypoints and labels directly.
 ```bash 
 python ./robot_tour_guide.py
 ```
+
+
+
